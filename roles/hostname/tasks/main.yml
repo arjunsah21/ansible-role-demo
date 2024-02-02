@@ -1,0 +1,11 @@
+---
+# tasks file for hostname
+
+- name: check hostname
+  shell:
+    cmd: hostname
+  register: results
+
+- name: Print the output
+  debug:
+    var: results.stdout

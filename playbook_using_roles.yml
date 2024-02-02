@@ -1,0 +1,9 @@
+---
+- name: roles demo
+  hosts: db_and_web_servers
+  gather_facts: false
+
+  roles:
+    - group_var
+    - ping
+    - hostname

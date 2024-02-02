@@ -1,0 +1,14 @@
+---
+- name: testing include, host and group variables
+  hosts: db_and_web_servers
+  gather_facts: false
+  tasks:
+    - name: print group variable
+      debug:
+        var: group_var
+        
+    - include: tasks/ping.yaml
+    - include: tasks/hostname.yaml
+
+   
+  

@@ -1,0 +1,6 @@
+---
+# tasks file for group_var
+
+- name: print group variable
+  debug:
+    var: group_var
